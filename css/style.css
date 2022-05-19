@@ -1,0 +1,361 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../font/poppins/Poppins-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: #252525;
+}
+
+.header-top {
+  background-color: #f44336;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  min-height: 40px;
+  line-height: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.header__text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__text p,
+.header__text a,
+.header__text span {
+  color: #fff;
+  padding-right: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.header__text-1 p {
+  display: inline;
+}
+
+.header__text-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__text-2 a {
+  text-decoration: none;
+}
+
+.upload__opt {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.upload__opt img {
+  width: 16px;
+  margin-right: 10px;
+}
+
+.login_opt {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login_opt img {
+  width: 16px;
+  margin-right: 10px;
+}
+
+.main__menu {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: static;
+  max-width: 100%;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  width: 500px;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu > li {
+  height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.4s ease;
+  transition: border-bottom 0.4s ease;
+  cursor: pointer;
+}
+
+.menu > li:hover {
+  border-bottom-color: red;
+}
+
+.menu > li > a {
+  color: black;
+  text-decoration: none;
+}
+
+.home {
+  position: relative;
+}
+
+.home:hover .home__show {
+  display: block;
+}
+
+.home__show {
+  font-family: Poppins;
+  width: 230px;
+  display: none;
+  list-style: none;
+  background: #fff;
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.9px;
+  padding-left: 21px;
+  left: -30px;
+  top: 62px;
+}
+
+.home__show li {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.9px;
+  border-bottom: 1px solid #eee;
+}
+
+.pages {
+  position: relative;
+}
+
+.pages:hover .pages__show {
+  display: block;
+}
+
+.pages__show {
+  position: absolute;
+  display: none;
+  list-style: none;
+  background: #fff;
+  width: 230px;
+  left: -10px;
+  top: 62px;
+}
+
+.pages__show li {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.9px;
+  border-bottom: 1px solid #eee;
+}
+
+.pages__show .blog .single__blog {
+  display: none;
+}
+
+.pages__show .blog:hover .single__blog {
+  position: absolute;
+  list-style: none;
+  display: none;
+  top: 0px;
+  right: -110px;
+  display: block;
+}
+
+.pages__show .right__icon {
+  float: right;
+}
+
+.All__Videos {
+  position: relative;
+}
+
+.All__Videos :hover .All__videos-show {
+  display: block;
+}
+
+.All__videos-show {
+  position: absolute;
+  list-style: none;
+  display: none;
+  top: 0px;
+  right: -130px;
+}
+
+.mega__menu-list {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 13px;
+  width: 100%;
+  max-width: 1440px;
+  position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  right: 0px;
+  top: 61px;
+  display: none;
+}
+
+.mega__menu-list ul {
+  list-style: none;
+}
+
+.mega__menu-list1 {
+  position: absolute;
+}
+
+.mega__menu:hover .mega__menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mega__menu h4 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.mega__menu a {
+  text-decoration: none;
+}
+
+.toggle-menu {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .container,
+  .mega__menu-list {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container,
+  .mega__menu-list {
+    max-width: 720px;
+  }
+  .header-top {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container,
+  .mega__menu-list {
+    max-width: 960px;
+  }
+  .home__show li {
+    padding: 20px 6px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header-top {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .mega__menu-list {
+    max-width: 1140px;
+  }
+  .home__show li {
+    padding: 5px 10px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .mega__menu-list {
+    max-width: 1320px;
+  }
+}
