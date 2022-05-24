@@ -185,6 +185,7 @@ body {
   list-style: none;
   background: #fff;
   position: absolute;
+  z-index: 2;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 13px;
@@ -214,6 +215,7 @@ body {
 
 .pages__show {
   position: absolute;
+  z-index: 2;
   display: none;
   list-style: none;
   background: #fff;
@@ -238,6 +240,7 @@ body {
 
 .pages__show .blog:hover .single__blog {
   position: absolute;
+  z-index: 2;
   list-style: none;
   display: none;
   top: 0px;
@@ -259,6 +262,7 @@ body {
 
 .all__Videos-show {
   position: absolute;
+  z-index: 2;
   list-style: none;
   display: none;
   top: 0px;
@@ -266,12 +270,14 @@ body {
 }
 
 .mega__menu-list {
+  background-color: white;
   font-family: Poppins;
   font-weight: 400;
   font-size: 13px;
   width: 100%;
   max-width: 1440px;
   position: absolute;
+  z-index: 3;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -286,6 +292,7 @@ body {
 
 .mega__menu-list1 {
   position: absolute;
+  z-index: 2;
 }
 
 .mega__menu:hover .mega__menu-list {
@@ -304,8 +311,10 @@ body {
 }
 
 .toggle-menu {
+  background-color: white;
   display: none;
   position: absolute;
+  z-index: 2;
   top: 62px;
   right: 0px;
   width: 90%;
@@ -423,7 +432,7 @@ main {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  padding: 0 12px;
+  padding-right: 12px;
 }
 
 .feature__one-items {
@@ -436,11 +445,18 @@ main {
 
 .video__duration {
   position: absolute;
-  top: 10px;
   right: 10px;
   color: white;
   background-color: black;
   padding: 4px;
+}
+
+.video__duration.top {
+  top: 10px;
+}
+
+.video__duration.bottom {
+  bottom: 10px;
 }
 
 .video__text {
@@ -473,6 +489,123 @@ main {
 
 .feature__two-items-child img {
   height: 211px;
+}
+
+.trending__video-header {
+  padding: 15px 0;
+}
+
+.heading__row-icon {
+  background-color: #f44336;
+  color: #fff;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  margin-right: 10px;
+  text-align: center;
+  width: 35px;
+}
+
+h3 {
+  font-size: 20px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #333333;
+  margin: 0;
+  line-height: 1.2;
+  font-family: Poppins;
+}
+
+.trending__video-row-items > .trending__video-item {
+  width: 211px;
+}
+
+.trending__video-row-items > .trending__video-item > .video__image-text {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.trending__video-row-items > .trending__video-item > .video__image-text > a {
+  position: relative;
+  display: block;
+  height: 160px;
+  cursor: pointer;
+}
+
+.trending__video-row-items > .trending__video-item > .video__image-text > a:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.trending__video-row-items > .trending__video-item > .video__image-text > a:hover::after {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.trending__video-row-items > .trending__video-item > .video__image-text > a > img {
+  max-width: 100%;
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.trending__video-row-items > .trending__video-item > .video__image-text > a::before {
+  color: #f44336;
+  content: "\f144";
+  font-family: "Font Awesome 5 Free";
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+  z-index: 12;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.trending__video-row-items > .trending__video-item > .video__image-text > a::after {
+  color: #fff;
+  content: "\f144";
+  font-family: "Font Awesome 5 Free";
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  z-index: 11;
+}
+
+.trending__video-row-items > .trending__video-item > .video__image-text::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s linear 0s;
+  transition: all 0.4s linear 0s;
+}
+
+.trending__video-row-items > .trending__video-item > .video__image-text:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (max-width: 576px) {

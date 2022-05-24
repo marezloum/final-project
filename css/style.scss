@@ -2,6 +2,7 @@
   font-family: Poppins;
   src: url(../font/poppins/Poppins-Regular.ttf);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -125,6 +126,7 @@ body {
   list-style: none;
   background: #fff;
   position: absolute;
+  z-index: 2;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 13px;
@@ -153,6 +155,7 @@ body {
 }
 .pages__show {
   position: absolute;
+  z-index: 2;
   display: none;
   list-style: none;
   background: #fff;
@@ -176,6 +179,7 @@ body {
     &:hover {
       .single__blog {
         position: absolute;
+        z-index: 2;
         list-style: none;
         display: none;
 
@@ -199,6 +203,7 @@ body {
 }
 .all__Videos-show {
   position: absolute;
+  z-index: 2;
   list-style: none;
   display: none;
   top: 0px;
@@ -206,12 +211,14 @@ body {
 }
 
 .mega__menu-list {
+  background-color: white;
   font-family: Poppins;
   font-weight: 400;
   font-size: 13px;
   width: 100%;
   max-width: 1440px;
   position: absolute;
+  z-index: 3;
   justify-content: space-between;
   right: 0px;
   top: 61px;
@@ -222,6 +229,7 @@ body {
 }
 .mega__menu-list1 {
   position: absolute;
+  z-index: 2;
 }
 .mega__menu:hover {
   .mega__menu-list {
@@ -238,8 +246,10 @@ body {
   }
 }
 .toggle-menu {
+  background-color: white;
   display: none;
   position: absolute;
+  z-index: 2;
   top: 62px;
   right: 0px;
   width: 90%;
@@ -271,6 +281,7 @@ body {
       width: 33px;
       height: 32px;
       position: absolute;
+
       top: 9px;
       right: 18px;
       cursor: pointer;
@@ -333,7 +344,7 @@ main {
 .feature__one {
   width: 50%;
   flex: 0 0 auto;
-  padding: 0 12px;
+  padding-right: 12px;
 }
 .feature__one-items {
   position: relative;
@@ -343,11 +354,16 @@ main {
 }
 .video__duration {
   position: absolute;
-  top: 10px;
   right: 10px;
   color: white;
   background-color: black;
   padding: 4px;
+  &.top {
+    top: 10px;
+  }
+  &.bottom {
+    bottom: 10px;
+  }
 }
 .video__text {
   position: absolute;
@@ -372,6 +388,141 @@ main {
   img {
     height: 211px;
   }
+}
+.trending__videos-area {
+}
+.trending__video {
+}
+.trending__video-header {
+  padding: 15px 0;
+}
+.heading__row-icon {
+  background-color: #f44336;
+  color: #fff;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  margin-right: 10px;
+  text-align: center;
+  width: 35px;
+}
+h3 {
+  font-size: 20px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #333333;
+  margin: 0;
+  line-height: 1.2;
+  font-family: Poppins;
+}
+.trending__video-row-items {
+  > .trending__video-item {
+    width: 211px;
+    > .video__image-text {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      > a {
+        position: relative;
+        display: block;
+        height: 160px;
+        cursor: pointer;
+        &:hover {
+          &::before {
+            visibility: visible;
+            opacity: 1;
+          }
+          &::after {
+            visibility: hidden;
+            opacity: 0;
+          }
+        }
+        > img {
+          max-width: 100%;
+          width: 100%;
+          height: 160px;
+          object-fit: cover;
+        }
+        &::before {
+          color: #f44336;
+          content: "\f144";
+          font-family: "Font Awesome 5 Free";
+          font-size: 40px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          text-align: center;
+          top: 50%;
+          transform: translateY(-50%);
+          transition: all 0.5s linear 0s;
+          z-index: 12;
+          opacity: 0;
+          visibility: hidden;
+        }
+        &::after {
+          color: #fff;
+          content: "\f144";
+          font-family: "Font Awesome 5 Free";
+          font-size: 40px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          text-align: center;
+          top: 50%;
+          -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+          -webkit-transition: all 0.3s linear 0s;
+          transition: all 0.3s linear 0s;
+          z-index: 11;
+        }
+      }
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s linear 0s;
+      }
+      &:hover {
+        &::after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+.video__duration {
+}
+
+.video__content {
+}
+.video__counter {
+}
+.video__viewers {
+}
+
+.view-icon {
+}
+.video__feedback {
+}
+.video__like-counter {
+}
+
+.fa-thumbs-up {
+}
+.like-icon {
+}
+.fa-thumbs-down {
+}
+.dislike-icon {
 }
 @media (max-width: 576px) {
   .container,
