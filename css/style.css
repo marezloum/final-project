@@ -752,7 +752,7 @@ h3 {
   left: 0;
   right: 0;
   text-align: center;
-  top: 50%;
+  top: calc(50% - 22px);
   -webkit-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
   z-index: 11;
