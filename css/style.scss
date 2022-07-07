@@ -525,10 +525,13 @@ main {
   padding: 4px;
   &.top {
     top: 10px;
+    font-size: 13px;
   }
   &.bottom {
     bottom: 10px;
+    font-size: 13px;
   }
+  border-radius: 4px;
 }
 .video__text {
   position: absolute;

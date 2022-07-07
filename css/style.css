@@ -603,14 +603,17 @@ main {
   color: white;
   background-color: black;
   padding: 4px;
+  border-radius: 4px;
 }
 
 .video__duration.top {
   top: 10px;
+  font-size: 13px;
 }
 
 .video__duration.bottom {
   bottom: 10px;
+  font-size: 13px;
 }
 
 .video__text {
