@@ -81,3 +81,30 @@ symbol.addEventListener("click", () => {
   const toggleMenu = document.querySelector(".toggle-menu");
   toggleMenu.classList.toggle("show");
 });
+
+const uploadModal = document.querySelector(".modal__upload-window");
+const loginModal = document.querySelector(".modal__login-window");
+
+const uploadButton = document.querySelector(".upload__opt");
+uploadButton.addEventListener("click", () => {
+  uploadModal.classList.toggle("show");
+});
+
+const closeButtonLoginModal = document.querySelector(
+  ".modal__login-window .modal__header-title-btn"
+);
+closeButtonLoginModal.addEventListener("click", () => {
+  loginModal.classList.remove("show");
+});
+
+const closeButtonUploadModal = document.querySelector(
+  ".modal__upload-window .modal__header-title-btn"
+);
+closeButtonUploadModal.addEventListener("click", () => {
+  uploadModal.classList.remove("show");
+});
+
+const loginButton = document.querySelector(".login_opt");
+loginButton.addEventListener("click", () => {
+  loginModal.classList.toggle("show");
+});

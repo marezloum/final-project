@@ -23,12 +23,100 @@
 
               <p>Server Time : 12.00am</p>
             </div>
+            <div class="modal__upload-window">
+              <div class="modal__content">
+                <div class="modal__header">
+                  <h3 class="modal__header-title">Upload Your Video</h3>
+                  <button class="modal__header-title-btn">x</button>
+                </div>
+                <div class="modal__body">
+                  <form
+                    action="#"
+                    method="post"
+                    class="upload__form"
+                    enctype="#"
+                  >
+                    <div class="form__group">
+                      <label for="video__title">Video Title</label>
+                      <input
+                        type="text"
+                        class="form__control"
+                        placeholder="Video Title"
+                      />
+                    </div>
+                    <div class="form__group">
+                      <label for="video__description">Video Description</label>
+                      <textarea
+                        name="video__description"
+                        class="form__control"
+                        placeholder="Video Description"
+                      ></textarea>
+                    </div>
+                    <div class="form__group">
+                      <label for="upload__file" class="custom__file-upload"
+                        >Select Your File
+                        <input
+                          type="file"
+                          name="upload__file"
+                          id="upload__file"
+                        />
+                      </label>
+                    </div>
+                    <div class="form__group">
+                      <button type="submit" class="button__primary">
+                        Upload
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="modal__login-window">
+              
+              <div class="modal__content">
+                <div class="modal__header">
+                  <h3 class="modal__header-title">Login Here...</h3>
+                  <button class="modal__header-title-btn">x</button>
+                </div>
+                <div class="modal__body">
+                  <form
+                    action="#"
+                    method="post"
+                    class="login__form"
+                    enctype="#"
+                  >
+                    <div class="form__group">
+                      <label>Username:</label>
+                      <input
+                        type="text"
+                        class="form__control"
+                        placeholder="username"
+                      />
+                    </div>
+                    <div class="form__group">
+                      <label>password:</label>
+                      <input
+                        type="password"
+                        class="form__control"
+                        placeholder="password"
+                      />
+                    </div>
+
+                    <div class="form__group">
+                      <button type="submit" class="button__primary">
+                        login
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
             <div class="header__text-2">
               <div class="upload__opt">
                 <img src="img/icons8-upload-26.png" alt="image" />
                 <a href="#">Upload Video</a>
-                <span>|</span>
               </div>
+              <span>|</span>
               <div class="login_opt">
                 <img src="img/icons8-lock.svg" alt="image" />
                 <a href="#"> Login</a>
@@ -142,7 +230,7 @@
               </li>
 
               <li><a href="#">CONTACT</a></li>
-              <li><a href="#">SINGLE BLOG</a></li>
+              <li><a href="single-blog.html">SINGLE BLOG</a></li>
             </ul>
             <div class="toggle__symbol">
               <i class="fa fa-bars"></i>
