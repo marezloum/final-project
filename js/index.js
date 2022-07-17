@@ -100,6 +100,7 @@ closeButtonLoginModal.addEventListener("click", () => {
 const closeButtonUploadModal = document.querySelector(
   ".modal__upload-window .modal__header-title-btn"
 );
+
 closeButtonUploadModal.addEventListener("click", () => {
   uploadModal.classList.remove("show");
 });
