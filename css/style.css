@@ -1300,6 +1300,7 @@ footer {
 }
 
 .videoplayer {
+  position: relative;
   padding-top: 15px;
 }
 
@@ -1311,6 +1312,52 @@ footer {
 .videoplayer iframe {
   width: 100%;
   height: 100%;
+}
+
+.videoplayer::before {
+  color: #f44336;
+  content: "\f144";
+  font-family: "Font Awesome 5 Free";
+  font-size: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+  z-index: 12;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.videoplayer::after {
+  color: #fff;
+  content: "\f144";
+  font-family: "Font Awesome 5 Free";
+  font-size: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: calc(50% - 22px);
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  z-index: 11;
+}
+
+.videoplayer:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.videoplayer:hover::after {
+  visibility: hidden;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  opacity: 0.0001;
 }
 
 .popular__videos {
