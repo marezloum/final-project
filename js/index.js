@@ -110,15 +110,13 @@ loginButton.addEventListener("click", () => {
   loginModal.classList.toggle("show");
 });
 
-const playIcon = document.querySelector(".videoplayer ::before");
-const videoPlayer = document.querySelector(".videoplayer");
+const playIcon = document.querySelector(".playControl");
+const videoPlayer = document.querySelector(".videoplayer video");
 
 playIcon.addEventListener("click", function () {
   if (videoPlayer.paused) {
     videoPlayer.play();
-    playIcon.innerHTML = "Pause";
   } else {
     videoPlayer.pause();
-    playIcon.innerHTML = "Play";
   }
 });
