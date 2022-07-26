@@ -109,3 +109,14 @@ const loginButton = document.querySelector(".login_opt");
 loginButton.addEventListener("click", () => {
   loginModal.classList.toggle("show");
 });
+
+const playIcon = document.querySelector(".playControl");
+const videoPlayer = document.querySelector(".videoplayer video");
+
+playIcon.addEventListener("click", function () {
+  if (videoPlayer.paused) {
+    videoPlayer.play();
+  } else {
+    videoPlayer.pause();
+  }
+});
