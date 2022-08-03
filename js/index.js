@@ -84,6 +84,17 @@ symbol.addEventListener("click", () => {
 
 const uploadModal = document.querySelector(".modal__upload-window");
 const loginModal = document.querySelector(".modal__login-window");
+loginModal.addEventListener("click", (event) => {
+  if (!event.target.closest(".modal__content")) {
+    loginModal.classList.remove("show");
+  }
+});
+
+uploadModal.addEventListener("click", (event) => {
+  if (!event.target.closest(".modal__content")) {
+    uploadModal.classList.remove("show");
+  }
+});
 
 const uploadButton = document.querySelector(".upload__opt");
 uploadButton.addEventListener("click", () => {
@@ -113,7 +124,7 @@ loginButton.addEventListener("click", () => {
 const playIcon = document.querySelector(".playControl");
 const videoPlayer = document.querySelector(".videoplayer video");
 
-playIcon.addEventListener("click", function () {
+playIcon?.addEventListener("click", function () {
   if (videoPlayer.paused) {
     videoPlayer.play();
     playIcon.classList.add("play");
