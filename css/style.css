@@ -1367,6 +1367,11 @@ footer {
   opacity: 0.0001;
 }
 
+.videoplayer .playPauseIcon .playControl.play::before, .videoplayer .playPauseIcon .playControl.play::after {
+  content: "\f28b";
+  font-weight: 400;
+}
+
 .popular__videos {
   padding: 15px;
   width: 25%;
