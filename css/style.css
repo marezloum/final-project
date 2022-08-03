@@ -142,6 +142,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0 15px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1871,6 +1873,59 @@ ul.comments__list li .children {
   font-size: 18px;
   min-width: 116px;
   color: white;
+}
+
+.sendMassage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.left__column-contact,
+.right__column-contact {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.contactPage__input {
+  border: 1px solid #eee;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #868686;
+  display: block;
+  font-size: 16px;
+  height: 48px;
+  line-height: 1.42857;
+  padding: 10px 12px;
+  margin: 10px;
+  width: calc(50% - 20px);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.contactPage__textarea {
+  min-height: 200px;
+  width: 100%;
+}
+
+.contactPage__button {
+  padding: 12px 25px;
+  border: medium none;
+  background-color: #f44336;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
 @media (min-width: 768px) {

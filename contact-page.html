@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact-page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="header__text">
+            <div class="header__text-1">
+              <p>info@themeix.com</p>
+              <span>|</span>
+
+              <p>Server Time : 12.00am</p>
+            </div>
+            <div class="modal__upload-window">
+              <div class="modal__content">
+                <div class="modal__header">
+                  <h3 class="modal__header-title">Upload Your Video</h3>
+                  <button class="modal__header-title-btn">x</button>
+                </div>
+                <div class="modal__body">
+                  <form
+                    action="#"
+                    method="post"
+                    class="upload__form"
+                    enctype="#"
+                  >
+                    <div class="form__group">
+                      <label for="video__title">Video Title</label>
+                      <input
+                        type="text"
+                        class="form__control"
+                        placeholder="Video Title"
+                      />
+                    </div>
+                    <div class="form__group">
+                      <label for="video__description">Video Description</label>
+                      <textarea
+                        name="video__description"
+                        class="form__control"
+                        placeholder="Video Description"
+                      ></textarea>
+                    </div>
+                    <div class="form__group">
+                      <label for="upload__file" class="custom__file-upload"
+                        >Select Your File
+                        <input
+                          type="file"
+                          name="upload__file"
+                          id="upload__file"
+                        />
+                      </label>
+                    </div>
+                    <div class="form__group">
+                      <button type="submit" class="button__primary">
+                        Upload
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="modal__login-window">
+              <div class="modal__content">
+                <div class="modal__header">
+                  <h3 class="modal__header-title">Login Here...</h3>
+                  <button class="modal__header-title-btn">x</button>
+                </div>
+                <div class="modal__body">
+                  <form
+                    action="#"
+                    method="post"
+                    class="login__form"
+                    enctype="#"
+                  >
+                    <div class="form__group">
+                      <label>Username:</label>
+                      <input
+                        type="text"
+                        class="form__control"
+                        placeholder="username"
+                      />
+                    </div>
+                    <div class="form__group">
+                      <label>password:</label>
+                      <input
+                        type="password"
+                        class="form__control"
+                        placeholder="password"
+                      />
+                    </div>
+
+                    <div class="form__group">
+                      <button type="submit" class="button__primary">
+                        login
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="header__text-2">
+              <div class="upload__opt">
+                <img src="img/icons8-upload-26.png" alt="image" />
+                <a href="#">Upload Video</a>
+                <span>|</span>
+              </div>
+              <div class="login_opt">
+                <img src="img/icons8-lock.svg" alt="image" />
+                <a href="#"> Login</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="header__menu">
+        <div class="main__menu">
+          <div class="container">
+            <img src="img/logo.jpg" alt="logo" />
+            <ul class="menu">
+              <li class="home">
+                <a href="index.html">HOME</a>
+                <ul class="home__show">
+                  <li><a>Home One</a></li>
+                  <li><a>Home Two</a></li>
+                  <li><a>Home Three</a></li>
+                  <li><a>Home Four</a></li>
+                  <li><a>Home RTL</a></li>
+                </ul>
+              </li>
+              <li class="pages">
+                <a href="index.html">PAGES</a>
+                <ul class="pages__show">
+                  <li><a>Home</a></li>
+                  <li><a>Home 2</a></li>
+                  <li><a>Home 3</a></li>
+                  <li class="blog">
+                    <a>
+                      Blog
+                      <i class="fa fa-angle-right right__icon"></i
+                    ></a>
+                    <ul>
+                      <li class="single__blog"><a>Single blog</a></li>
+                    </ul>
+                  </li>
+                  <li class="all__Videos">
+                    <a> All Videos</a>
+                    <ul class="all__Videos-show">
+                      <li><a>Single video</a></li>
+                      <li><a>Single video 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>contact</a></li>
+                  <li><a>404</a></li>
+                </ul>
+              </li>
+              <li><a href="/">BLOG</a></li>
+              <li class="mega__menu">
+                <a href="index.html"> MEGA MENU</a>
+                <div class="mega__menu-list">
+                  <div>
+                    <h4>HOME PAGES</h4>
+                    <ul class="mega__menu-list1">
+                      <li>
+                        <a><i class="fa fa-home"></i>Home One</a>
+                      </li>
+                      <li>
+                        <a><i class="fa fa-home"></i>Home Two</a>
+                      </li>
+                      <li>
+                        <a><i class="fa fa-home"></i>Home Three</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>BLOG PAGES</h4>
+                    <ul class="mega__menu-list2">
+                      <li>
+                        <a><i class="fa fa-angle-right"></i> Blog Grid Style</a>
+                      </li>
+                      <li>
+                        <a><i class="fa fa-angle-right"></i>Blog Single Page</a>
+                      </li>
+                      <li>
+                        <a><i class="fa fa-angle-right"></i>Single Video</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Video PAGES</h4>
+                    <ul class="mega__menu-list3">
+                      <li>
+                        <a><i class="fa fa-angle-right"></i>All Videos</a>
+                      </li>
+                      <li>
+                        <a href="single-video.html"
+                          ><i class="fa fa-angle-right"></i>Single Video V1</a
+                        >
+                      </li>
+                      <li>
+                        <a href="single-video-2.html"
+                          ><i class="fa fa-angle-right"></i>Single Video V2</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Extra PAGES</h4>
+                    <ul class="mega__menu-list3">
+                      <li>
+                        <a><i class="fa fa-angle-right"></i>Single blog</a>
+                      </li>
+                      <li>
+                        <a><i class="fa fa-angle-right"></i>Contact</a>
+                      </li>
+                      <li>
+                        <a><i class="fa fa-angle-right"></i>Single Video</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li><a href="index.html">CONTACT</a></li>
+              <li><a href="single-blog.html">SINGLE BLOG</a></li>
+            </ul>
+            <div class="toggle__symbol">
+              <i class="fa fa-bars"></i>
+            </div>
+
+            <div class="toggle-menu">
+              <ul class="toggle__list">
+                <li class="toggle__list-home toggle__list-toggle">
+                  <a href="index.html"> Home</a> <span class="arrow"></span>
+                  <ul class="toggle__home-show">
+                    <li><a href="#"> Home One</a></li>
+                    <li><a href="#">Home Two</a></li>
+                    <li><a href="#"> Home Three</a></li>
+                    <li><a href="#"> Home Four</a></li>
+                    <li><a href="#"> Home RTL</a></li>
+                  </ul>
+                </li>
+                <li class="toggle__list-pages toggle__list-toggle">
+                  <a href="index.html">Pages</a><span class="arrow"></span>
+                  <ul class="toggle__pages-show">
+                    <li><a href="#">Home 1</a></li>
+                    <li><a href="#">Home 2</a></li>
+                    <li><a href="#">Home 3</a></li>
+                    <li class="toggle__list-pages-blog toggle__list-toggle">
+                      <a href="#">Blog</a>
+                      <span class="arrow"> </span>
+                      <ul>
+                        <li class="single__blog">
+                          <a href="#">Single blog</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="toggle__list-pages-videos toggle__list-toggle">
+                      <a href="#">All Videos</a><span class="arrow"> </span>
+                      <ul>
+                        <li><a href="index.html">Single video</a></li>
+                        <li><a href="index.html">Single video 2</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">404</a></li>
+                  </ul>
+                </li>
+                <li class="toggle__list-blog"><a href="#"> blog</a></li>
+                <li class="toggle__list-mega toggle__list-toggle">
+                  <a href="index.html"> Mega menu</a><span class="arrow"></span>
+                  <ul>
+                    <li class="toggle__list-toggle">
+                      <a href="#">HOME PAGES</a>
+                      <span class="arrow"></span>
+                      <ul>
+                        <li>
+                          <a href="#"><i class="fa fa-home"></i>HOME One</a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa fa-home"></i>HOME Two</a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa fa-home"></i>HOME Three</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="toggle__list-toggle">
+                      <a href="#">BLOG PAGES</a>
+                      <span class="arrow"></span>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-angle-right"></i> Blog Grid
+                            Style</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-angle-right"></i> Blog Single
+                            Page</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-angle-right"></i> Single Video</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="toggle__list-toggle">
+                      <a href="index.html">VIDEO PAGES</a>
+                      <span class="arrow"></span>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-angle-right"></i>All Videos</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-angle-right"></i>Single Video V1</a
+                          >
+                        </li>
+
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-angle-right"></i>Single Video V2</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="toggle__list-toggle">
+                      <a href="#">Extra PAGES</a>
+                      <span class="arrow"></span>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-angle-right"></i>Single blog</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-angle-right"></i>Contact</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-angle-right"></i>Single Video</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="toggle__list-contact">
+                  <a href="index.html">Contact</a>
+                </li>
+                <li class="toggle__list-singleblog">
+                  <a href="#"> Single Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="page__banner-area">
+          <div class="container">
+            <div class="page__banner-items">
+              <div class="page__banner">
+                <div class="page__title">
+                  <h2>Blog post title goes here</h2>
+                </div>
+                <div class="page__breadcrumb">
+                  <p>
+                    <a href="index.html">home</a> / blog post title goes here
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page__content">
+          <div class="container">
+            <div class="left__column-contact">
+              <div class="themeix-section-h">
+                <span class="heading-icon"><i class="fa fa-envelope"></i></span>
+                <h3>send Message</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been.
+                </p>
+              </div>
+              <form action="" class="sendMassage">
+                <input
+                  type="name"
+                  class="contactPage__input"
+                  placeholder="name"
+                />
+                <input
+                  type="name"
+                  class="contactPage__input"
+                  placeholder="Email*"
+                />
+                <input
+                  type="Number"
+                  class="contactPage__input"
+                  placeholder="Phone"
+                />
+                <input
+                  type="Number"
+                  class="contactPage__input"
+                  placeholder="Website*"
+                  min="0"
+                />
+                <textarea
+                  class="contactPage__textarea contactPage__input"
+                  placeholder="Message"
+                ></textarea>
+                <button class="contactPage__button">Send Message</button>
+              </form>
+            </div>
+            <div class="right__column-contact"></div>
+
+            <div class="video__row-items">
+              <div class="video-item">
+                <div class="video__image-text">
+                  <a href="single-video.html">
+                    <img src="img/28.jpg" alt="image" />
+                  </a>
+                  <span class="video__duration bottom"> 3.11</span>
+                </div>
+                <div class="video__content">
+                  <h4>
+                    <a href="single-video.html">
+                      Funny videos 2016 funny pranks try not to laugh challenge
+                    </a>
+                  </h4>
+                  <div class="video__counter">
+                    <div class="video__viewers">
+                      <span class="fa fa-eye view-icon"></span>
+                      <span>241,021</span>
+                    </div>
+                    <div class="video__feedback">
+                      <div class="video__like-counter">
+                        <span class="far fa-thumbs-up like-icon"></span>
+                        <span>2140</span>
+                      </div>
+                      <div class="video__like-counter">
+                        <span class="far fa-thumbs-down dislike-icon"></span>
+                        <span>2140</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-item">
+                <div class="video__image-text">
+                  <a href="single-video.html">
+                    <img src="img/2.jpg" alt="image" />
+                  </a>
+                  <span class="video__duration bottom"> 3.11</span>
+                </div>
+                <div class="video__content">
+                  <h4>
+                    <a href="single-video.html">
+                      Double Chocolate- Stuffed Mini Churros
+                    </a>
+                  </h4>
+                  <div class="video__counter">
+                    <div class="video__viewers">
+                      <span class="fa fa-eye view-icon"></span>
+                      <span>241,021</span>
+                    </div>
+                    <div class="video__feedback">
+                      <div class="video__like-counter">
+                        <span class="far fa-thumbs-up like-icon"></span>
+                        <span>785</span>
+                      </div>
+                      <div class="video__like-counter">
+                        <span class="far fa-thumbs-down dislike-icon"></span>
+                        <span>2140</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="video-item">
+                <div class="video__image-text">
+                  <a href="single-video.html">
+                    <img src="img/23.jpg" alt="image" />
+                  </a>
+                  <span class="video__duration bottom"> 5.10</span>
+                </div>
+                <div class="video__content">
+                  <h4>
+                    <a href="single-video.html" class="video-title"
+                      >Greek-Style Pasta Bake (Pasticcio - English Recipe)</a
+                    >
+                  </h4>
+                  <div class="video__counter">
+                    <div class="video__viewers">
+                      <span class="fa fa-eye view-icon"></span>
+                      <span>241,021</span>
+                    </div>
+                    <div class="video__feedback">
+                      <div class="video__like-counter">
+                        <span class="far fa-thumbs-up like-icon"></span>
+                        <span>785</span>
+                      </div>
+                      <div class="video__like-counter">
+                        <span class="far fa-thumbs-down dislike-icon"></span>
+                        <span>2140</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="video-item">
+                <div class="video__image-text">
+                  <a href="single-video.html">
+                    <img src="img/4.jpg" alt="image" />
+                  </a>
+                  <span class="video__duration bottom"> 2.29</span>
+                </div>
+                <div class="video__content">
+                  <h4>
+                    <a href="single-video.html" class="video-title"
+                      >Rainbow Sprinkle Cinnamon Rolls
+                    </a>
+                  </h4>
+                  <div class="video__counter">
+                    <div class="video__viewers">
+                      <span class="fa fa-eye view-icon"></span>
+                      <span>241,021</span>
+                    </div>
+                    <div class="video__feedback">
+                      <div class="video__like-counter">
+                        <span class="far fa-thumbs-up like-icon"></span>
+                        <span>785</span>
+                      </div>
+                      <div class="video__like-counter">
+                        <span class="far fa-thumbs-down dislike-icon"></span>
+                        <span>2140</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__banner">
+        <div class="footer__banener-items">
+          <div class="footer__banner-item-text">
+            <h2>Enough imporessed to get own video blog?</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been.
+            </p>
+          </div>
+          <div class="footer__banner-item-button">
+            <a href="#" class="banner__button"> purchase now </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer__rows">
+          <div class="footer__row-items">
+            <div class="single__footer">
+              <div class="footer__heading-wrap">
+                <span class="heading-icon"
+                  ><i class="fa fa-play-circle" aria-hidden="true"></i
+                ></span>
+                <h3 class="footer__heading">About Us</h3>
+                <div class="single__footer-text">
+                  <p>
+                    Vestibulum quis cursus mi, vitae mollis metus.Nulam eu lects
+                    gravida, bibendum enim in, vulputate erat. Vestibulum
+                    ullamcorper ornare magna
+                  </p>
+                </div>
+                <div class="social__media">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="fb-link">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="gp-link">
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="single__footer">
+              <div class="footer__heading-wrap">
+                <div class="single__footer-text">
+                  <div class="single-footer">
+                    <div class="footer-heading-wrap">
+                      <span class="heading-icon"
+                        ><i class="fa fa fa-link" aria-hidden="true"></i
+                      ></span>
+                      <h3 class="footer-heading">Important links</h3>
+                    </div>
+                    <div class="footer-list">
+                      <ul>
+                        <li><a href="#">Submit New Video</a></li>
+                        <li><a href="#">Popular Videos</a></li>
+                        <li><a href="#">Trending Videos</a></li>
+                        <li><a href="#">Most watched Videos</a></li>
+                        <li><a href="#">Latest Videos</a></li>
+                        <li><a href="#">Video Authors</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single__footer">
+              <div class="footer__heading-wrap">
+                <span class="heading-icon"
+                  ><i class="fa fa-life-ring" aria-hidden="true"></i
+                ></span>
+                <h3 class="footer__heading">Get Support</h3>
+                <div class="single__footer-text">
+                  <div class="footer-list">
+                    <ul>
+                      <li><a href="#">Our Forum</a></li>
+                      <li><a href="#">Facebook Page</a></li>
+                      <li><a href="#">Live Chat</a></li>
+                      <li><a href="#">Toll Free Number</a></li>
+                      <li><a href="#">Support Agent</a></li>
+                      <li><a href="#">Tickets</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single__footer">
+              <div class="footer__heading-wrap">
+                <span class="heading-icon"
+                  ><i class="fa fa-plane" aria-hidden="true"></i
+                ></span>
+                <h3 class="footer__heading">Contact Us</h3>
+                <div class="single__footer-text">
+                  <p>4100 S Choctaw Rd, Choctaw, OK, 73020</p>
+                  <div class="footer-list">
+                    <ul>
+                      <li>
+                        <a href="tel:+11231231234">T : +1 123 123 1234</a>
+                      </li>
+                      <li>
+                        <a href="tel:+11231234321">F : +1 123 123 4321</a>
+                      </li>
+                      <li>
+                        <a href="#">E : info@themeix.com</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-rows-items-copyright">
+        <div class="copyright__logo">
+          <img src="img/logo.jpg" alt="logo" />
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div class="copyright-text">
+          <p>
+            Etube © <span id="spanYear">2022</span> - All rights reserved. -
+            Proudly made with <a href="#">Themeix</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
