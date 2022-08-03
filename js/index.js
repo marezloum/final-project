@@ -116,7 +116,9 @@ const videoPlayer = document.querySelector(".videoplayer video");
 playIcon.addEventListener("click", function () {
   if (videoPlayer.paused) {
     videoPlayer.play();
+    playIcon.classList.add("play");
   } else {
     videoPlayer.pause();
+    playIcon.classList.remove("play");
   }
 });

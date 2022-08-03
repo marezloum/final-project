@@ -1130,6 +1130,13 @@ footer {
           opacity: 0.0001;
         }
       }
+      &.play {
+        &::before,
+        &::after {
+          content: "\f28b";
+          font-weight: 400;
+        }
+      }
     }
   }
 
