@@ -1318,6 +1318,7 @@ footer {
 }
 
 .videoplayer .playPauseIcon .playControl {
+  cursor: pointer;
   position: absolute;
   z-index: 30;
   height: 60px;
