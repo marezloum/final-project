@@ -1065,6 +1065,8 @@ footer {
 .page__content {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   .container {
     align-items: start;
     flex-wrap: wrap;
@@ -1569,7 +1571,10 @@ ul.comments__list {
   width: 50%;
   margin-top: 20px;
 }
-
+#map {
+  width: 100%;
+  height: 436px;
+}
 .contactPage__input {
   border: 1px solid #eee;
   border-radius: 0;
@@ -1598,6 +1603,7 @@ input[type="number"] {
   width: 100%;
 }
 .contactPage__button {
+  margin-bottom: 20px;
   padding: 12px 25px;
   border: medium none;
   background-color: #f44336;
