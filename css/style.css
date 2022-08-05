@@ -409,6 +409,7 @@ body {
 .menu .mega__menu-list3 li a,
 .menu .mega__menu-list4 li a {
   color: #1d2025;
+  text-decoration: none;
 }
 
 .menu .home__show li:hover > a,
