@@ -142,6 +142,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0 15px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -393,12 +395,21 @@ body {
 .menu .mega__menu-list2 li,
 .menu .mega__menu-list3 li,
 .menu .mega__menu-list4 li {
-  color: #1d2025;
   padding: 10px 23px;
   display: block;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: none;
+}
+
+.menu .home__show li a,
+.menu .pages__show li a,
+.menu .mega__menu-list1 li a,
+.menu .mega__menu-list2 li a,
+.menu .mega__menu-list3 li a,
+.menu .mega__menu-list4 li a {
+  color: #1d2025;
+  text-decoration: none;
 }
 
 .menu .home__show li:hover > a,
@@ -1284,6 +1295,13 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .page__content .container {
@@ -1308,6 +1326,7 @@ footer {
 .videoplayer video,
 .videoplayer .second__player {
   height: 390px;
+  width: 100%;
 }
 
 .videoplayer .playPauseIcon {
@@ -1876,6 +1895,65 @@ ul.comments__list li .children {
   font-size: 16px;
   min-width: 116px;
   color: white;
+}
+
+.sendMassage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.left__column-contact,
+.right__column-contact {
+  width: 50%;
+  margin-top: 20px;
+}
+
+#map {
+  width: 100%;
+  height: 436px;
+}
+
+.contactPage__input {
+  border: 1px solid #eee;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #868686;
+  display: block;
+  font-size: 16px;
+  height: 48px;
+  line-height: 1.42857;
+  padding: 10px 12px;
+  margin: 10px;
+  width: calc(50% - 20px);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.contactPage__textarea {
+  min-height: 200px;
+  width: 100%;
+}
+
+.contactPage__button {
+  margin-bottom: 20px;
+  padding: 12px 25px;
+  border: medium none;
+  background-color: #f44336;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
 @media (min-width: 768px) {

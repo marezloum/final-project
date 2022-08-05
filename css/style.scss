@@ -148,6 +148,7 @@ body {
   width: 100%;
   max-width: 1440px;
   display: flex;
+  flex-wrap: wrap;
   padding: 0 15px;
   justify-content: space-between;
   align-items: center;
@@ -349,12 +350,15 @@ body {
   .mega__menu-list3,
   .mega__menu-list4 {
     li {
-      color: #1d2025;
       padding: 10px 23px;
       display: block;
       font-weight: 500;
       letter-spacing: 0.5px;
       text-transform: none;
+      a {
+        color: #1d2025;
+        text-decoration: none;
+      }
       &:hover {
         > a {
           color: gray;
@@ -1064,6 +1068,8 @@ footer {
 .page__content {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   .container {
     align-items: start;
     flex-wrap: wrap;
@@ -1080,6 +1086,7 @@ footer {
   video,
   .second__player {
     height: 390px;
+    width: 100%;
   }
   .playPauseIcon {
     position: absolute;
@@ -1566,6 +1573,56 @@ ul.comments__list {
   min-width: 116px;
   color: white;
 }
+.sendMassage {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left__column-contact,
+.right__column-contact {
+  width: 50%;
+  margin-top: 20px;
+}
+#map {
+  width: 100%;
+  height: 436px;
+}
+.contactPage__input {
+  border: 1px solid #eee;
+  border-radius: 0;
+  box-shadow: none;
+  color: #868686;
+  display: block;
+  font-size: 16px;
+  height: 48px;
+  line-height: 1.42857;
+  padding: 10px 12px;
+  margin: 10px;
+  width: calc(50% - 20px);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.contactPage__textarea {
+  min-height: 200px;
+  width: 100%;
+}
+.contactPage__button {
+  margin-bottom: 20px;
+  padding: 12px 25px;
+  border: medium none;
+  background-color: #f44336;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
 @media (min-width: 768px) {
   .container,
   .mega__menu-list {
