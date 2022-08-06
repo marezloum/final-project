@@ -395,7 +395,7 @@ body {
   }
   > div {
     width: 25%;
-    padding: 25px 9px 25px 48px;
+    padding: 25px 9px 25px 32px;
     border-right: 1px solid #eee;
   }
   display: none;
@@ -1008,6 +1008,7 @@ footer {
 }
 .copyright-text {
   display: flex;
+  padding: 0 15px;
   justify-content: center;
   a {
     text-decoration: none;
@@ -1026,7 +1027,8 @@ footer {
   justify-content: space-between;
 }
 .page__banner-area {
-  display: block;
+  display: flex;
+  justify-content: center;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -1073,6 +1075,7 @@ footer {
   .container {
     align-items: start;
     flex-wrap: wrap;
+    margin-bottom: 20px;
   }
 }
 .left__column {
@@ -1621,6 +1624,7 @@ input[type="number"] {
   color: #fff;
   font-size: 12px;
   letter-spacing: 1px;
+  margin: 10px 12px;
 }
 
 @media (min-width: 768px) {
@@ -1693,6 +1697,10 @@ input[type="number"] {
     .share__options {
       margin-top: 10px;
     }
+  }
+  .left__column-contact,
+  .right__column-contact {
+    width: 100%;
   }
 }
 
