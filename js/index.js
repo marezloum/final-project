@@ -133,3 +133,30 @@ playIcon?.addEventListener("click", function () {
     playIcon.classList.remove("play");
   }
 });
+
+function submitComment(e) {
+  const name = document.getElementById("name");
+  const comment = document.getElementById("comment");
+  const commentsList = document.getElementById("comments__list");
+  const commentForm = document.getElementById("commentForm");
+  const li = document.createElement("li");
+  li.innerHTML = `
+  <div class="comment">
+    <div class="comment__pic">
+      <img src="img/profile-icon-9.png" alt="comment" />
+    </div>
+    <div class="comment__text">
+      <h5><a href="#">${name.value}</a></h5>
+      <span class="comment__date"
+        >Posted on 18:20 December 12, 2016</span
+      >
+      <p>
+      ${comment.value}
+      </p>
+      <a href="#" class="comment__reply">Reply</a>
+    </div>
+  </div>
+  `;
+  commentsList.append(li);
+  commentForm.reset();
+}
